@@ -17,5 +17,11 @@ int main() {
 		sum += *p;
 	}
 	cout << sum << endl;
+
+	string str = "abc"; // str = lvalue, "abc" = rvalue;
+	string str2 = move(str);
+	cout << str2 << endl << str << " °ú¿¬" << endl;
+
+
 	return 0;
 }
